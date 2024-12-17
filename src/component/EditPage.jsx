@@ -59,7 +59,7 @@ export default function EditPage() {
           return;
         }
 
-        const response = await axios.post(`http://localhost:2020/edit`, {
+        const response = await axios.post(`https://my-blog-api-00yf.onrender.com/edit`, {
           postid: id,
           title: form.title,
           content: form.content,
@@ -152,6 +152,6 @@ export default function EditPage() {
           </button>
         </div>
       </form>
-    </div>
+    </div>                
   );
 }
