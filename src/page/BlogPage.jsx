@@ -13,7 +13,7 @@ const BlogPage = () => {
     const query = new  URLSearchParams(location.search);
     async function getSingleBlog() {
         const id = query.get('id')
-        const response = await   axios.get('http://localhost:2020/selectid/'+id)
+        const response = await   axios.get('https://my-blog-api-00yf.onrender.com/selectid/'+id)
         setInfo(response.data.result[0])
        console.log(response.data.result[0]);
        }
